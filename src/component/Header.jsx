@@ -26,7 +26,8 @@ const Header =()=>{
           window.scrollTo({top : scrollTop * 2, left : 0, behavior:'smooth' })  
         }
         else if(Menu[i].id === 4 ){
-          window.scrollTo({top : scrollTop * Menu.length, left : 0, behavior:'smooth' })  
+          const index = document.querySelectorAll('section').length
+          window.scrollTo({top : scrollTop *index, left : 0, behavior:'smooth' })  
         }
         else{
           window.scrollTo({top : scrollTop* i, left : 0, behavior:'smooth' })

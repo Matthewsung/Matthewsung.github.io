@@ -32,7 +32,7 @@ const canvasOption=[
 ]
 const SecTxtOption=['책임감있는', '노력하는','긍정적인',]
 const Sec1 = ()=>{
-  const [secTxt, setSecTxt]= useState('')
+  const [secTxt, setSecTxt]= useState(' ')
   let index = 0;
   useEffect(() => {
     const secP = document.querySelector('.sec_1_txt p')
