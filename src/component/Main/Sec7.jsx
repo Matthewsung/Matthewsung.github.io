@@ -2,21 +2,21 @@ import React,{ useRef, useState,useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const options ={
-  desk:"img/covid.png",
-  detail:"API를 이용한 전세계의 코로나 확진자수를 파악하고 각 국가별 검색을 통해 자세한 확진자 추세를 확인하기 위해 제작",
-  website:"https://matthewsung.github.io/covid/",
-  git:"https://github.com/Matthewsung/covid/"
+  desk:"img/webpage.png",
+  detail:"경기생활 문화센터의 홈페이지 하드코딩",
+  website:"https://matthewsung.github.io/webpage/",
+  git:"https://github.com/Matthewsung/webpage/"
 }
 
-const Sec6 = ()=>{
-  const Sec6Ref = useRef()
+const Sec7 = ()=>{
+  const Sec7Ref = useRef()
   const ShowProject = ()=>{
-    const sec_6 = document.querySelector('.sec_6')
-    const sec_6Top = sec_6.getBoundingClientRect().top;
-    const sec_6Height = sec_6.getBoundingClientRect().height;
+    const sec_7 = document.querySelector('.sec_7')
+    const sec_7Top = sec_7.getBoundingClientRect().top;
+    const sec_7Height = sec_7.getBoundingClientRect().height;
     //이미지 나오는 animation
-    if(sec_6Top - (sec_6Height * 0.3) <= 0){
-        Sec6Ref.current.style.transform = "scale(1)"
+    if(sec_7Top - (sec_7Height * 0.3) <= 0){
+        Sec7Ref.current.style.transform = "scale(1)"
     }
   }
   useEffect(()=>{
@@ -25,9 +25,9 @@ const Sec6 = ()=>{
   },[])
 
   return(
-    <section className="sec_6" >
+    <section className="sec_7" >
       <div className="w_1440">
-        <div className="container_L" ref={Sec6Ref}>
+        <div className="container_L" ref={Sec7Ref}>
           <div className="desk">
             <img src="img/r_desk.png" alt="r_desk" />
             <div className="inner_img">
@@ -49,4 +49,4 @@ const Sec6 = ()=>{
   )
 }
 
-export default Sec6
+export default Sec7

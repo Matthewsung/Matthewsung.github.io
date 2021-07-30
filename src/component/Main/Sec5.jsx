@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React,{ useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {Pagination,Navigation} from 'swiper/core';
 import Slide from './Slide'
@@ -55,6 +55,7 @@ const swiperOption=[
 const Sec5 = ()=>{
   SwiperCore.use([Pagination,Navigation]);
 
+  
   return(
     <section className="sec_5">
       <div className="w_1440">
@@ -63,7 +64,7 @@ const Sec5 = ()=>{
         <Swiper slidesPerView={3} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true} pagination={{"clickable": true}} navigation={true} className="mySwiper">
           {swiperOption.map((v,i) => {
             return (
-              <SwiperSlide key={`Slide_${v.id}`}>
+              <SwiperSlide data-key={`Slide_${v.id}`}>
                 <Slide key={`슬라이드_${v.id}`} swiperOption={v} />
               </SwiperSlide>
             )

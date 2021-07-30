@@ -19,7 +19,7 @@ const Publish = ({options}) => {
     tablet.style.background = "url(../img/baraboda_main_768.png) no-repeat center 23px / cover"
     phone.style.background = "url(../img/baraboda_main.png) no-repeat center 5px / cover"
 
-    console.log(`${options.sec}Ref`)
+    // console.log(`${options.sec}Ref`)
   },[])
 
   return(

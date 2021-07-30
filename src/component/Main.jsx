@@ -5,6 +5,7 @@ import Sec3 from './Main/Sec3'
 import Sec4 from './Main/Sec4'
 import Sec5 from './Main/Sec5'
 import Sec6 from './Main/Sec6'
+import Sec7 from './Main/Sec7'
 const Main = ()=>{
 
   return(
@@ -15,6 +16,7 @@ const Main = ()=>{
       <Sec4 /> 
       <Sec5 />
       <Sec6 />
+      <Sec7 />
     </>
   )
 }

@@ -384,7 +384,7 @@ section{
 }
 .inner_img {
   width: 736px;
-  height: 403px;
+  height: 416px;
   background-position: top left;
   position: absolute;
   left: 32px;
@@ -435,8 +435,14 @@ section{
   margin-right: 20px;
   display: inline-block;
 }
+.c_detail{
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px ;
+  margin: 10px 0 ;
+}
 .c_content{
-  height: 50px;
+  /* height: 50px; */
   line-height: 50px;
   margin: 10px 0;
 }
