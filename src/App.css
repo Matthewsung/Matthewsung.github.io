@@ -239,6 +239,7 @@ section{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -249,7 +250,7 @@ section{
     100%{transform: translate(-50%,-20%) scale(1.4);}
 }
 .info_inner_img img{
-    width: 100%;
+    width: 55%;
 }
 .info_desc{
     width: 100%;

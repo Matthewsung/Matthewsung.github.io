@@ -114,7 +114,9 @@ const Sec2 = ()=>{
                     <div className="info_pan">
                         <div className="info_outer_cir">
                             <div className="info_inner_cir">
-                                <div className="info_inner_img"></div>
+                                <div className="info_inner_img">
+                                    <img src="img/my.png" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
