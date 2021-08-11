@@ -2,29 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom';
 import CanvasCircle from './CanvasCircle'
 import CanvasPercent from './CanvasPercent';
-const canvasOption=[
-    {
-      id:1,
-      divId : "sec_2_cir1",
-      width:50,
-      end : 2*Math.PI,
-      color: "#bed8ef"
-    },
-    {
-      id:2,
-      divId : "sec_2_cir2",
-      width:150,
-      end : 2*Math.PI,
-      color: "#053f73"
-    },
-    {
-      id:3,
-      divId : "sec_2_cir3",
-      width:700,
-      end : 2*Math.PI,
-      color: "#bed8ef"
-    },
-  ]
+
 const percentOption=[
     {
         id:1,
@@ -106,7 +84,6 @@ const Sec2 = ()=>{
 
   return(
     <section className="sec_2">
-        {Array(canvasOption.length).fill().map( (v,i) => <CanvasCircle key = {canvasOption[i].id} option = {canvasOption[i]} />)}
         
         <div className="w_1440">
             <div className="basic_info">

@@ -2,29 +2,29 @@ import React,{useRef,useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import CanvasCircle from './CanvasCircle';
 
-const canvasOption=[
-    {
-      id:1,
-      divId : "sec_4_cir1",
-      width:600,
-      end : 2*Math.PI,
-      color: "#bed8ef"
-    },
-    {
-      id:2,
-      divId : "sec_4_cir2",
-      width:200,
-      end : 2*Math.PI,
-      color: "#053f73"
-    },
-    {
-      id:3,
-      divId : "sec_4_cir3",
-      width:70,
-      end : 2*Math.PI,
-      color: "#bed8ef"
-    },
-  ]
+// const canvasOption=[
+//     {
+//       id:1,
+//       divId : "sec_4_cir1",
+//       width:600,
+//       end : 2*Math.PI,
+//       color: "#bed8ef"
+//     },
+//     {
+//       id:2,
+//       divId : "sec_4_cir2",
+//       width:200,
+//       end : 2*Math.PI,
+//       color: "#053f73"
+//     },
+//     {
+//       id:3,
+//       divId : "sec_4_cir3",
+//       width:70,
+//       end : 2*Math.PI,
+//       color: "#bed8ef"
+//     },
+//   ]
 const Sec4 = ()=>{
   const Sec4Ref = useRef()
   const ShowProject = ()=>{
@@ -45,7 +45,7 @@ const Sec4 = ()=>{
   },[])
   return(
     <section className="sec_4" >
-         {Array(canvasOption.length).fill().map( (v,i) => <CanvasCircle key = {canvasOption[i].id} option = {canvasOption[i]} />)}
+         {/* {Array(canvasOption.length).fill().map( (v,i) => <CanvasCircle key = {canvasOption[i].id} option = {canvasOption[i]} />)} */}
         <div className="w_1440">
             <div className="container_L" ref={Sec4Ref}>
                 <div className="desk">
