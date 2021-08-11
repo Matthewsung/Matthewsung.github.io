@@ -1,6 +1,6 @@
 import React,{useRef,useEffect} from 'react'
 import { Link } from 'react-router-dom';
-import CanvasCircle from './CanvasCircle';
+// import CanvasCircle from './CanvasCircle';
 
 // const canvasOption=[
 //     {

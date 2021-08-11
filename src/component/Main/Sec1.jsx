@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import CanvasCircle from './CanvasCircle'
+// import CanvasCircle from './CanvasCircle'
 
 const SecTxtOption=['책임감있는', '노력하는','긍정적인',]
 const Sec1 = ()=>{

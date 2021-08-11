@@ -4,12 +4,12 @@ import './App.css';
 import Header from './component/Header';
 import Main from './component/Main'
 import Footer from './component/Footer'
-import Tmp from './component/Main/Tmp'
+import Background from './component/Main/Background'
 function App() {
   return (
     <BrowserRouter>
       <div className="wrap">
-        <Tmp/>
+        <Background/>
         <Header />
         <Main />
         <Footer />

@@ -42,15 +42,9 @@ section{
   height: 100vh;
   position: relative;
   /* overflow: hidden; */
+  background: #fdfbef;
 }
 /* Main sec1 */
-section{
-  height: 100vh;
-}
-.sec_1{
-  /* background:linear-gradient(to right ,#bed8ef 40%,#fff 30%) ; */
-}
-
 #sec_1_cir1{
   position: absolute;
   left: 50%;
