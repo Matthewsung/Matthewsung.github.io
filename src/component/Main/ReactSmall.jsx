@@ -52,7 +52,7 @@ const swiperOption=[
     desc:"먼저 3개의 칸을 연속으로 선택한 플레이어가 승리하는 게임"
   },
 ]
-const Sec5 = ()=>{
+const ReactSmall = ()=>{
   SwiperCore.use([Pagination,Navigation]);
 
   
@@ -75,4 +75,4 @@ const Sec5 = ()=>{
   )
 }
 
-export default Sec5
+export default ReactSmall

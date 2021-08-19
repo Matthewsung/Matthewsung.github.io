@@ -73,7 +73,7 @@ const Sec2 = ()=>{
         }
     }
     const Makeement = ()=>{
-       return Array(percentOption.length).fill().map((v,i)=><CanvasPercent key={percentOption[i].id} percentOption={percentOption[i]}/>)
+       return percentOption.map((v,i)=><CanvasPercent key={percentOption[i].id} percentOption={percentOption[i]}/>)
     }
 
     useEffect(()=>{
@@ -135,9 +135,6 @@ const Sec2 = ()=>{
                         {isShow?Makeement():''}
                     </div>
                 </div>
-                {/* <div className="info_motto">
-                    <span>안녕하세요 성주영의 포트폴리오입니다</span> 
-                </div> */}
             </div>
         </div>
     </section>

@@ -363,8 +363,6 @@ section{
   float: left;
   position: relative;
   overflow: hidden;
-  transform: scale(0);
-  transition: all 1s;
 }
 
 .desk{
