@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactContents from './ReactContents'
+import ReactContents from './sub/ReactContents'
 const options =[
   {
     id:1,

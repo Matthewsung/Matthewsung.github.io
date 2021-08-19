@@ -1,13 +1,13 @@
 import React,{ useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {Pagination,Navigation} from 'swiper/core';
-import Slide from './Slide'
+import Slide from './sub/Slide'
 
 // styles 불러오기
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "swiper/components/navigation/navigation.min.css"
-import "./Sec5.css";
+import "./ReactSmall.css";
 const swiperOption=[
   {
     id:1,

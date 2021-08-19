@@ -19,7 +19,7 @@ const Menu = [
 ]
 const Header =()=>{
   const onClickMenu = (e) => {
-    Array(Menu.length).fill().map((v,i)=>{
+    Menu.map((v,i)=>{
       if(e.target.innerText === Menu[i].txt){
         const scrollTop = document.querySelector(`.sec_${Menu[i].id}`).getBoundingClientRect().height 
         if(Menu[i].id === 3 ){
@@ -42,8 +42,7 @@ const Header =()=>{
     <div className="header">
       <div className="logo"><img src="img/logo.png" alt="" /></div>
       <ul className="menu_ul" >
-          {Array(Menu.length).fill('').map( (v,i) => <li key={Menu[i].id} className="menu_li" onClick={onClickMenu}>{Menu[i].txt}</li>)}
-         
+        {Menu.map( (v,i) => <li key={Menu[i].id} className="menu_li" onClick={onClickMenu}>{Menu[i].txt}</li>)}
       </ul>
     </div>
   )

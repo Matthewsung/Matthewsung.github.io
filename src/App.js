@@ -4,7 +4,7 @@ import './App.css';
 import Header from './component/Header';
 import Main from './component/Main'
 import Footer from './component/Footer'
-import Background from './component/Main/Background'
+import Background from './component/Main/sub/Background'
 function App() {
   return (
     <BrowserRouter>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom';
 // import CanvasCircle from './CanvasCircle'
-import CanvasPercent from './CanvasPercent';
+import CanvasPercent from './sub/CanvasPercent';
 
 const percentOption=[
     {

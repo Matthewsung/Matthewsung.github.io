@@ -1,5 +1,5 @@
 import React from 'react'
-import Javascript from './Javascript'
+import Javascript from './sub/Javascript'
 const options = [
   {
     id:1,
