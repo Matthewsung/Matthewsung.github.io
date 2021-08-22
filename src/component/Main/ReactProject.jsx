@@ -25,7 +25,7 @@ const options =[
   {
     id:4,
     desk:"img/beerlist.png",
-    detail:"api를 이용한 beerlist를 redux와 material-ui Framework를 이용하여 화면에 표시하고 filter기능을 구현",
+    detail:"api를 이용한 beerlist를 redux, material-ui Framework와 styled-component를 이용하여 화면에 표시하고 filter기능을 구현",
     website:"https://matthewsung.github.io/beerlist/",
     git:"https://github.com/Matthewsung/beerlist"
   },
