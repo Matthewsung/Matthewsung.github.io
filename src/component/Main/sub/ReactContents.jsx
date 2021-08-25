@@ -17,8 +17,6 @@ console.log(options)
             </div>
           </div>
           <div className="container_R">
-        
-        </div>
             <div className="c_content"><p className="c_title">Tools</p> HTML / CSS / Javascript / React</div>
             <div className="c_content">
               <p className="c_title">Detail</p>
@@ -26,6 +24,7 @@ console.log(options)
             </div>
             <div className="c_goToWeb"><Link to={{pathname:options.website}} target="_blank">웹사이트 바로가기</Link></div>
             <div className="c_goToWeb"><Link to={{pathname:options.git}} target="_blank">Github Code 보기</Link></div>
+        </div>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 /* header */
 .header{
   width: 100%;
-  min-width: 1200px;
+  min-width: 1440px;
   height: 70px;
   background: rgba(256, 256, 256, 0.3);
   position: fixed;
@@ -359,10 +359,16 @@ section{
     100%{opacity: 1;}
 }
 /* Main sec3 */
+.sec_box{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .container_L{
   width: 60%;
   height: 100%;
-  float: left;
   position: relative;
   overflow: hidden;
 }
@@ -417,7 +423,6 @@ section{
 .container_R{
   width: 40%;
   height: 100%;
-  float: left;
   font-size: 25px;
   padding-top: 140px;
 }
