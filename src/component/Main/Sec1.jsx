@@ -16,7 +16,7 @@ const Sec1 = ()=>{
       },1000)
     },2000,1000)
     
-  }, [])
+  }, [index])
   return(
     <section className="sec_1">
         <div className="sec_1_txt">안녕하세요<p>{secTxt}</p>개발자 성주영입니다</div>

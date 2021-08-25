@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default function Background() {
   // Some random colors
@@ -28,7 +27,7 @@ export default function Background() {
       y: Math.random() * 12
     };
 
-    let anim = el.animate(
+    const anim = el.animate(
       [
         { transform: "translate(0, 0)" },
         { transform: `translate(${to.x}rem, ${to.y}rem)` }

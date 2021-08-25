@@ -19,7 +19,7 @@ const CanvasPercent = ({percentOption})=>{
   }
   useEffect(()=>{
     FillCanvas()
-  },[])
+  },[FillCanvas])
   
   
   

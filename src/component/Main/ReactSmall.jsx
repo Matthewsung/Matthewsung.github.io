@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from 'react'
+import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {Pagination,Navigation} from 'swiper/core';
 import Slide from './sub/Slide'
@@ -64,7 +64,7 @@ const ReactSmall = ()=>{
         <Swiper slidesPerView={3} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true} pagination={{"clickable": true}} navigation={true} className="mySwiper">
           {swiperOption.map((v,i) => {
             return (
-              <SwiperSlide data-key={`Slide_${v.id}`}>
+              <SwiperSlide data-key={`Slide_${v.id}`} key={v.id}>
                 <Slide key={`슬라이드_${v.id}`} swiperOption={v} />
               </SwiperSlide>
             )

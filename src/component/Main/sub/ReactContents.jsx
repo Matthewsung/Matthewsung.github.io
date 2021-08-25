@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 const ReactContents = ({options})=>{
-console.log(options)
+// console.log(options)
   return(
     <section>
       <div className="w_1440">

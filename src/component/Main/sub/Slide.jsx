@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import {  SwiperSlide } from "swiper/react";
 
 const Slide = ({ swiperOption}) => {
   

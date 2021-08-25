@@ -28,15 +28,15 @@
   line-height: 70px;
   float: left;
   padding: 0 20px;
+  border-radius: 20px;
   color: #08196d;
   font-size: 20px;
-  transition: all 0.5s;
+  transition: all 0.3s;
   perspective: 600px;
 }
 .menu_li:hover {
   background: #08196d;
   color: #fff;
-  transform: rotateX(360deg);
 }
 section{
   width: 100%;

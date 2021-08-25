@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
 const Menu = [
   {
     id:1,
@@ -19,25 +19,19 @@ const Menu = [
 ]
 const Header =()=>{
   const onClickMenu = (e) => {
-    Menu.map((v,i)=>{
-      if(e.target.innerText === Menu[i].txt){
-        const scrollTop = document.querySelector(`.sec_${Menu[i].id}`).getBoundingClientRect().height 
-        if(Menu[i].id === 3 ){
-          window.scrollTo({top : scrollTop * 2, left : 0, behavior:'smooth' })  
-        }
-        else if(Menu[i].id === 4 ){
-          const index = document.querySelectorAll('section').length
-          window.scrollTo({top : scrollTop *index, left : 0, behavior:'smooth' })  
+    Menu.map( (v,i) => {
+      if(e.target.innerText === v.txt){
+        if(v.id === 4){
+          const footer = document.querySelector('.footer').getBoundingClientRect().bottom
+          window.scrollTo({top : footer, left : 0, behavior:'smooth' })
         }
         else{
-          window.scrollTo({top : scrollTop* i, left : 0, behavior:'smooth' })
-
+          const section = document.querySelector('section').getBoundingClientRect().height
+          window.scrollTo({top : section * (v.id - 1), left : 0, behavior:'smooth' })
         }
       }
-
     })
   }
-  const MenuRef = useRef()
   return(
     <div className="header">
       <div className="logo"><img src="img/logo.png" alt="" /></div>
