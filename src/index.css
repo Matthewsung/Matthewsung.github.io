@@ -16,3 +16,6 @@ a{
   margin: 0 auto;
   position: relative;
 }
+.wrap{
+  min-width: 1200px;
+}

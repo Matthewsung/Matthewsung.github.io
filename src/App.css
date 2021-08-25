@@ -1,6 +1,7 @@
 /* header */
 .header{
   width: 100%;
+  min-width: 1200px;
   height: 70px;
   background: rgba(256, 256, 256, 0.3);
   position: fixed;
@@ -174,7 +175,7 @@ section{
     padding-top: 130px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr 1fr;
+    grid-gap: 100px;
     justify-items: center;
     
 }
@@ -188,7 +189,7 @@ section{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #fff495;
+    background: #e2e7eb;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -202,13 +203,13 @@ section{
     40%{width: 100px;height: 100px; border-radius: 50%; transform: translate(-50%,-120%) scale(1); box-shadow: 0 0 0 0}
     50%{width: 100px;height: 100px; border-radius: 50%; transform: translate(-50%,-50%) scale(1); box-shadow: 0 0 0 0}
     85%{width: 300px;height: 450px; border-radius: 20px; transform: translate(-50%,-50%) scale(1); box-shadow: 0 0 0 0}
-    100%{width: 300px;height: 450px; border-radius: 20px; transform: translate(-50%,-50%);box-shadow: -10px 10px 0 0 #d4d2d2c2;}
+    100%{width: 300px;height: 450px; border-radius: 20px; transform: translate(-50%,-50%);box-shadow: -10px 10px 0 0 #949494;}
 }
 .info_outer_cir{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background: #b2e8b4;
+    background: #949494;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -254,17 +255,18 @@ section{
     padding: 25px;
 }
 .info_desc td{
-  padding: 10px 15px;
+  padding: 0.5em 2em;
 }
 .info_desc td:nth-child(1){
     /* width: 200px;
     height: 30px; */
-    background: #08196d;
-    color: #fff;
+    background: #e2e7eb;
+    color: #2d4169;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
     border-radius: 10px;
+    border: 1px solid;
 }
 .info_icando{
     width: 100%;
@@ -274,6 +276,7 @@ section{
 }
 .work_item{
     width: 100%;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 .work_item:nth-child(1){
@@ -303,8 +306,7 @@ section{
 
 
 .item_img{
-    width: 80px;
-    padding: 15px;
+    width: 50px;
     float: left;
 }
 .item_img img{
@@ -314,7 +316,7 @@ section{
     width: 300px;
     height: 40px;
     line-height: 40px;
-    margin: 25px 0;
+    margin: 5px 10px;
     font-size: 25px;
     font-weight: 600;
     box-shadow: 0 0 3px 0 #77727282;
@@ -421,10 +423,11 @@ section{
 }
 .c_title{
   width: 150px;
-  color: #fff;
-  background: #08196d;
+  color: #2d4169;
+  background: #e2e7eb;
   text-align: center;
   border-radius: 10px;
+  border: 1px solid;
   margin-right: 20px;
   display: inline-block;
 }

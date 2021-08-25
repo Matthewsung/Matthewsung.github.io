@@ -7,15 +7,18 @@ console.log(options)
   return(
     <section>
       <div className="w_1440">
-        <div className="container_L" >
-          <div className="desk">
-            <img src="img/r_desk.png" alt="r_desk" />
-            <div className="inner_img">
-                <img src={options.desk} alt=""/>
+        <div className="sec_box">
+          <div className="container_L" >
+            <div className="desk">
+              <img src="img/r_desk.png" alt="r_desk" />
+              <div className="inner_img">
+                  <img src={options.desk} alt=""/>
+              </div>
             </div>
           </div>
+          <div className="container_R">
+        
         </div>
-        <div className="container_R">
             <div className="c_content"><p className="c_title">Tools</p> HTML / CSS / Javascript / React</div>
             <div className="c_content">
               <p className="c_title">Detail</p>
