@@ -19,14 +19,14 @@ const Menu = [
 ]
 const Header =()=>{
   const onClickMenu = (e) => {
-    Menu.map( (v,i) => {
+    Menu.map( (v) => {
       if(e.target.innerText === v.txt){
+        const section = document.querySelector('section').getBoundingClientRect().height
+        const wrap =document.querySelector('.wrap').getBoundingClientRect().height
         if(v.id === 4){
-          const footer = document.querySelector('.footer').getBoundingClientRect().bottom
-          window.scrollTo({top : footer, left : 0, behavior:'smooth' })
+          window.scrollTo({top : wrap, left : 0, behavior:'smooth' })
         }
         else{
-          const section = document.querySelector('section').getBoundingClientRect().height
           window.scrollTo({top : section * (v.id - 1), left : 0, behavior:'smooth' })
         }
       }
