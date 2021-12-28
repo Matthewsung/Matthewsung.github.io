@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom'
 
 
-const ReactContents = ({options})=>{
+const VueContents = ({options})=>{
 // console.log(options)
   return(
     <section>
@@ -19,7 +19,7 @@ const ReactContents = ({options})=>{
             </div>
           </div>
           <div className="container_R">
-            <div className="c_content"><p className="c_title">Tools</p> HTML / CSS / Javascript / React</div>
+            <div className="c_content"><p className="c_title">Tools</p> HTML / CSS / Javascript / Vue</div>
             <div className="c_content">
               <p className="c_title">Detail</p>
               <p className="c_detail">{options.detail}</p> 
@@ -33,4 +33,4 @@ const ReactContents = ({options})=>{
   )
 }
 
-export default ReactContents
+export default VueContents

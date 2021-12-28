@@ -29,7 +29,6 @@ const options =[
     website:"https://matthewsung.github.io/beerlist/",
     git:"https://github.com/Matthewsung/beerlist"
   },
-  
 ]
 const ReactProject = () => {
   return (

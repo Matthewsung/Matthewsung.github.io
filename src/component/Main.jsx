@@ -4,6 +4,7 @@ import Sec2 from './Main/Sec2'
 import Publishing from './Main/Publishing'
 import ReactSmall from './Main/ReactSmall'
 import ReactProject from './Main/ReactProject'
+import VueProject from './Main/VueProject'
 
 const Main = ()=>{
 
@@ -14,6 +15,7 @@ const Main = ()=>{
       <Publishing />
       <ReactSmall />
       <ReactProject />
+      <VueProject />
     </>
   )
 }
