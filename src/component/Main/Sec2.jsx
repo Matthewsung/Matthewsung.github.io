@@ -1,60 +1,6 @@
-import React, { useEffect, useState } from 'react'
-// import CanvasCircle from './CanvasCircle'
-import CanvasPercent from './sub/CanvasPercent';
-
-const percentOption=[
-    {
-        id:1,
-        url:"img/html.png",
-        alt:'포토샵',
-        score : "90"
-    },
-    {
-        id:2,
-        url:"img/css.png",
-        alt:'포토샵',
-        score : "90"
-    },
-    {
-        id:3,
-        url:"img/js.png",
-        alt:'포토샵',
-        score : "85"
-    },
-    {
-        id:4,
-        url:"img/jquery.png",
-        alt:'포토샵',
-        score : "90"
-    },
-    {
-        id:5,
-        url:"img/php.png",
-        alt:'포토샵',
-        score : "70"
-    },
-    {
-        id:6,
-        url:"img/react.png",
-        alt:'포토샵',
-        score : "90"
-    },
-    {
-        id:7,
-        url:"img/photoshop.png",
-        alt:'포토샵',
-        score : "80"
-    },
-    {
-        id:8,
-        url:"img/illustrator.png",
-        alt:'포토샵',
-        score : "80"
-    },
-]
+import React, { useEffect } from 'react'
 
 const Sec2 = ()=>{
-    const [isShow,setIsShow]= useState(false)
     const ScrollEvent = ()=>{
         const sec_2 = document.querySelector('.sec_2')
         const sec_2Top = sec_2.getBoundingClientRect().top;
@@ -67,23 +13,15 @@ const Sec2 = ()=>{
             infoPan.style.animation = "back_pan 1s forwards"
             infoOuterCir.style.animation = "circle_big 0.25s 0.75s forwards"
             infoInnerImgr.style.animation = "img_up 0.3s 1s forwards"
-            // 퍼센트 차는 
-            setIsShow(true)
         }
     }
-    const Makeement = ()=>{
-       return percentOption.map((v,i)=><CanvasPercent key={percentOption[i].id} percentOption={percentOption[i]}/>)
-    }
-
+    
     useEffect(()=>{
         window.addEventListener('scroll',ScrollEvent)
     },[])
     
-
-
   return(
     <section className="sec_2">
-        
         <div className="w_1440">
             <div className="basic_info">
                 <div className="info_img">
@@ -97,43 +35,36 @@ const Sec2 = ()=>{
                         </div>
                     </div>
                 </div>
-                <div className="info_desc">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>이름</td>
-                                <td>성주영</td>
-                            </tr>
-                            <tr>
-                                <td>생년월일</td>
-                                <td>89.05.31</td>
-                            </tr>
-                            <tr>
-                                <td>주소</td>
-                                <td>서울시 은평구 갈현동</td>
-                            </tr>
-                            <tr>
-                                <td>자격증</td>
-                                <td>웹디자인자격증   컴퓨터활용2급</td>
-                            </tr>
-                            <tr>
-                                <td>이메일</td>
-                                <td>
-                                    jooyongs1@gmail.com
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Github</td>
-                                <td>
-                                    <a href="https://github.com/Matthewsung">https://github.com/Matthewsung</a>                                    
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div className="info_icando">
-                        {isShow?Makeement():''}
-                    </div>
-                </div>
+                <ul className="info_desc">
+                    <li className="info_row">
+                        <p>이름</p>
+                        <p>성주영</p>
+                    </li>
+                    <li className="info_row">
+                        <p>생년월일</p>
+                        <p>89.05.31</p>
+                    </li>
+                    <li className="info_row">
+                        <p>주소</p>
+                        <p>서울시 은평구 갈현동</p>
+                    </li>
+                    <li className="info_row">
+                        <p>자격증</p>
+                        <p>웹디자인자격증   컴퓨터활용2급</p>
+                    </li>
+                    <li className="info_row">
+                        <p>이메일</p>
+                        <p>jooyongs1@gmail.com</p>
+                    </li>
+                    <li className="info_row">
+                        <p>Github</p>
+                        <p>
+                            <a href="https://github.com/Matthewsung">
+                                https://github.com/Matthewsung
+                            </a> 
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>

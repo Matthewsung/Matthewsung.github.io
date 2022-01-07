@@ -17,26 +17,45 @@ const Menu = [
     txt:"CONTACT"
   },
 ]
-const Header =()=>{
-  const onClickMenu = (e) => {
-    Menu.map( (v) => {
+const Header = () => {
+  const onClickMenu = e => {
+    Menu.map( v => {
       if(e.target.innerText === v.txt){
         const section = document.querySelector('section').getBoundingClientRect().height
         const wrap =document.querySelector('.wrap').getBoundingClientRect().height
-        if(v.id === 4){
-          window.scrollTo({top : wrap, left : 0, behavior:'smooth' })
+        if(v.id === 4) {
+          window.scrollTo({
+            top : wrap, 
+            left : 0, 
+            behavior:'smooth' 
+          })
         }
-        else{
-          window.scrollTo({top : section * (v.id - 1), left : 0, behavior:'smooth' })
+        else {
+          window.scrollTo({
+            top : section * (v.id - 1), 
+            left : 0, 
+            behavior:'smooth' 
+          })
         }
       }
     })
   }
   return(
     <div className="header">
-      <div className="logo"><img src="img/logo.png" alt="" /></div>
+      <div className="logo">
+        <img src="img/logo.png" alt="메인 로고" />
+      </div>
       <ul className="menu_ul" >
-        {Menu.map( (v,i) => <li key={Menu[i].id} className="menu_li" onClick={onClickMenu}>{Menu[i].txt}</li>)}
+        { 
+          Menu.map( (v,i) => 
+            <li 
+              key={ Menu[i].id } 
+              className="menu_li"
+              onClick={onClickMenu}
+            >
+              { Menu[i].txt }
+            </li>)
+        }
       </ul>
     </div>
   )
