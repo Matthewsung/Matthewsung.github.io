@@ -1,10 +1,4 @@
-.sec_title {
-  font-size: 60px;
-  text-align: center;
-  margin-bottom: 70px;
-  font-weight: 700;
-  color: #053f73;
-}
+
 .swiper-container {
   width: 100%;
   height: calc(100% - 170px);

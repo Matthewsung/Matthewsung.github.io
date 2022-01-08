@@ -1,6 +1,6 @@
 import React from 'react'
-// import Javascript from './sub/Javascript'
 import PublishItem from './sub/Publish_item'
+
 const options = [
   {
     id:1,
@@ -112,7 +112,42 @@ const options = [
       vue: false
     }
   },
+  {
+    id:7,
+    desk:"url(img/hollys.png) no-repeat left top / cover",
+    detail:"Vue와 SCSS를 이용한 홈페이지로 chart.js를 이용해 가독성을 높였으며 카카오 로그인을 통해 접근성을 향상시켰습니다.",
+    website:"https://matthewsung.github.io/hollys/",
+    git:"https://github.com/Matthewsung/hollys/",
+    skill:{
+      html: true,
+      css: true,
+      styledComponent:false,
+      sass: true,
+      jquery: false, 
+      js: true, 
+      react: false,
+      vue: true
+    }
+  },
+  {
+    id:8,
+    desk:"url(img/quizrix.png) no-repeat left top / cover",
+    detail:"Vue, Nuxt.js, node.js를 이용한 홈페이지로 메인페이지, 마이페이지, 어드민페이지 제작에 참여하였습니다.",
+    website:"https://quizrix.com/",
+    git:"https://github.com/Matthewsung",
+    skill:{
+      html: true,
+      css: true,
+      styledComponent:false,
+      sass: true,
+      jquery: false, 
+      js: true, 
+      react: false,
+      vue: true
+    }
+  },
 ]
+
 const Publishing = ()=>{
   return(
     <section className="publish_wrap">
@@ -123,17 +158,15 @@ const Publishing = ()=>{
           </p>
         </header>
         <main className="works_container">
-        {
-          options.map( val => {
-              return <PublishItem options = { val } key={ val.git }/>
-            }  
-          )
-        }
-          
+          {
+            options.map( val => {
+                return <PublishItem options = { val } key={ val.git }/>
+              }  
+            )
+          }
         </main>
       </div>
     </section>
-  //  options.map((val) => <Javascript options={val}key={val.id}  />)
   )
 }
 export default Publishing

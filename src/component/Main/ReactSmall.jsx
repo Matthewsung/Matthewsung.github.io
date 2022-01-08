@@ -59,8 +59,9 @@ const ReactSmall = ()=>{
   return(
     <section className="sec_5">
       <div className="w_1440">
-        <div className="sec_title">React Mini Project</div>
-
+        <header className="main_header">
+          <p>REACT MINI PROJECT</p>
+        </header>
         <Swiper slidesPerView={3} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true} pagination={{"clickable": true}} navigation={true} className="mySwiper">
           {swiperOption.map((v,i) => {
             return (

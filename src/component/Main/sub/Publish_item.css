@@ -1,6 +1,7 @@
 .publish_item {
   width: calc((100% - (16px * 2)) / 3);
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  background: #e2e7eb;
   padding: 32px;
   border-radius: 16px;
   cursor: pointer;
@@ -25,15 +26,13 @@
 }
 
 .used_skill {
-  /* display: flex;
-  gap: 16px; */
+  display: flex;
+  gap: 16px;
 }
 
 .used_skill li{
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
-
-  /* overflow: hidden; */
 }

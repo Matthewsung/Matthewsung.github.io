@@ -25,7 +25,7 @@ const Sec2 = ()=>{
         <div className="w_1440">
             <header className="main_header">
                 <p>
-                    ABOUT
+                    ABOUT ME
                 </p>
             </header>
             <main className="basic_info">
