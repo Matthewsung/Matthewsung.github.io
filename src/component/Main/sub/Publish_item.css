@@ -1,0 +1,39 @@
+.publish_item {
+  width: calc((100% - (16px * 2)) / 3);
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  padding: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.publish_img_box {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.publish_img_box img {
+  width: 100%;
+}
+
+.skill_box {
+  
+}
+
+.skill_box h3 {
+  margin: 16px 0;
+}
+
+.used_skill {
+  /* display: flex;
+  gap: 16px; */
+}
+
+.used_skill li{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+
+  /* overflow: hidden; */
+}

@@ -23,7 +23,12 @@ const Sec2 = ()=>{
   return(
     <section className="sec_2">
         <div className="w_1440">
-            <div className="basic_info">
+            <header className="main_header">
+                <p>
+                    ABOUT
+                </p>
+            </header>
+            <main className="basic_info">
                 <div className="info_img">
                     <div className="info_pan">
                         <div className="info_outer_cir">
@@ -64,8 +69,12 @@ const Sec2 = ()=>{
                             </a> 
                         </p>
                     </li>
+                    <li className="info_row">
+                        <p>자기소개</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente laborum necessitatibus, repellendus itaque veniam perspiciatis molestiae adipisci quia nobis consequuntur quidem vitae ex distinctio impedit ipsam hic qui perferendis?</p>
+                    </li>
                 </ul>
-            </div>
+            </main>
         </div>
     </section>
   )

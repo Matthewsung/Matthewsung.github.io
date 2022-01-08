@@ -5,7 +5,7 @@ import {
 
 
 const VueContents = ({options})=>{
-// console.log(options)
+  
   return(
     <section>
       <div className="w_1440">

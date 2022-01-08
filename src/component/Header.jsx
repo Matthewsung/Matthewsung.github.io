@@ -10,7 +10,7 @@ const Menu = [
   },
   {
     id:3,
-    txt:"PORTFOLIO"
+    txt:"WORKS"
   },
   {
     id:4,
@@ -19,11 +19,12 @@ const Menu = [
 ]
 const Header = () => {
   const onClickMenu = e => {
-    Menu.map( v => {
+    Menu.map( ( v ) => {
       if(e.target.innerText === v.txt){
         const section = document.querySelector('section').getBoundingClientRect().height
-        const wrap =document.querySelector('.wrap').getBoundingClientRect().height
-        if(v.id === 4) {
+        const wrap = document.querySelector('.wrap').getBoundingClientRect().height
+
+        if(v.id === 5) {
           window.scrollTo({
             top : wrap, 
             left : 0, 
@@ -38,6 +39,7 @@ const Header = () => {
           })
         }
       }
+      return ''
     })
   }
   return(
