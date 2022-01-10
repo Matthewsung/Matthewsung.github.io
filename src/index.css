@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #042e54;
 }
 ul{
   list-style: none;
@@ -21,8 +22,10 @@ a{
   position: relative;
 }
 .w_1440 .main_header {
+  width: 100%;
   margin-bottom: 32px;
   font-size: 62px;
+  font-family: 'Nanum Pen Script', cursive;
 }
 
 .wrap{

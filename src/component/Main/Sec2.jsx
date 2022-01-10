@@ -50,14 +50,6 @@ const Sec2 = ()=>{
                         <p>89.05.31</p>
                     </li>
                     <li className="info_row">
-                        <p>주소</p>
-                        <p>서울시 은평구 갈현동</p>
-                    </li>
-                    <li className="info_row">
-                        <p>자격증</p>
-                        <p>웹디자인자격증   컴퓨터활용2급</p>
-                    </li>
-                    <li className="info_row">
                         <p>이메일</p>
                         <p>jooyongs1@gmail.com</p>
                     </li>
@@ -71,7 +63,9 @@ const Sec2 = ()=>{
                     </li>
                     <li className="info_row">
                         <p>자기소개</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente laborum necessitatibus, repellendus itaque veniam perspiciatis molestiae adipisci quia nobis consequuntur quidem vitae ex distinctio impedit ipsam hic qui perferendis?</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente laborum necessitatibus, repellendus itaque veniam perspiciatis molestiae adipisci quia nobis consequuntur quidem vitae ex distinctio impedit ipsam hic qui perferendis?
+                        </p>
                     </li>
                 </ul>
             </main>

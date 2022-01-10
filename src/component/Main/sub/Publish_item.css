@@ -1,7 +1,7 @@
 .publish_item {
-  width: calc((100% - (16px * 2)) / 3);
+  width: calc((100% - (32px * 2)) / 3);
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-  background: #e2e7eb;
+  background: #fff;
   padding: 32px;
   border-radius: 16px;
   cursor: pointer;
@@ -11,6 +11,9 @@
   width: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
+  
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
 }
 
 .publish_img_box img {

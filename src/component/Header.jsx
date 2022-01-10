@@ -1,4 +1,5 @@
 import React from 'react'
+// import {Link} from 'react-router-dom'
 const Menu = [
   {
     id:1,
@@ -22,11 +23,17 @@ const Header = () => {
     Menu.map( ( v ) => {
       if(e.target.innerText === v.txt){
         const section = document.querySelector('section').getBoundingClientRect().height
-        const wrap = document.querySelector('.wrap').getBoundingClientRect().height
-
-        if(v.id === 5) {
+        const bot = document.querySelector('.wrap').getBoundingClientRect().height
+        if (v.id === 3) {
           window.scrollTo({
-            top : wrap, 
+            top: section * 3,
+            left: 0,
+            behavior: 'smooth'
+          })
+        }
+        else if(v.id === 4) {
+          window.scrollTo({
+            top : bot, 
             left : 0, 
             behavior:'smooth' 
           })
@@ -45,7 +52,9 @@ const Header = () => {
   return(
     <div className="header">
       <div className="logo">
-        <img src="img/logo.png" alt="메인 로고" />
+        {/* <Link to="/">
+          <img src="img/logo.png" alt="메인 로고" />
+        </Link> */}
       </div>
       <ul className="menu_ul" >
         { 

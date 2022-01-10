@@ -2,13 +2,29 @@
 const Slide = ({ swiperOption}) => {
   
   return(
-      <div className="item_box" data-key={`item_box_${swiperOption.id}`}>
-        <div data-key={`title_${swiperOption.id}`} className="slide_title">{swiperOption.title}</div>
-          <div className="img_box" data-key={`img_box_${swiperOption.id}`}>
-            <img src={swiperOption.url} alt={swiperOption.title} data-key={`img_${swiperOption.id}`} />
-          </div>
-        <div className="slide_desc" data-key={`desc_${swiperOption.id}`}>{swiperOption.desc}</div>
-        <button data-key={`btn_${swiperOption.id}`} className="chk_code">코드 보러가기</button>
+      <div className="item_box" >
+        <div className="slide_title"
+        >
+          {swiperOption.title}
+        </div>
+        <div className="img_box" >
+          <img 
+            src={swiperOption.url}
+            alt={swiperOption.title} 
+          />
+        </div>
+        <div className="slide_desc" >
+          {swiperOption.desc}
+        </div>
+          <button className="chk_code">
+          <a 
+            href="https://github.com/Matthewsung/react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            코드 보러가기
+          </a>
+        </button>
       </div>
   )
 }

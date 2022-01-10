@@ -1,5 +1,7 @@
 import React from 'react'
+import { Route } from 'react-router-dom';
 import PublishItem from './sub/Publish_item'
+import DetailWebPage from './sub/DetailWebPage'
 
 const options = [
   {
@@ -160,9 +162,17 @@ const Publishing = ()=>{
         <main className="works_container">
           {
             options.map( val => {
-                return <PublishItem options = { val } key={ val.git }/>
+                return( 
+                  <PublishItem 
+                    options = { val } 
+                    key={ val.git }
+                  />
+                )
               }  
             )
+          }
+          {
+            <Route path='/detail' component={() => <DetailWebPage options={options}/> } />
           }
         </main>
       </div>

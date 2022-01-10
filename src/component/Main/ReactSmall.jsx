@@ -55,21 +55,37 @@ const swiperOption=[
 const ReactSmall = ()=>{
   SwiperCore.use([Pagination,Navigation]);
 
-  
   return(
     <section className="sec_5">
       <div className="w_1440">
         <header className="main_header">
           <p>REACT MINI PROJECT</p>
         </header>
-        <Swiper slidesPerView={3} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true} pagination={{"clickable": true}} navigation={true} className="mySwiper">
-          {swiperOption.map((v,i) => {
-            return (
-              <SwiperSlide data-key={`Slide_${v.id}`} key={v.id}>
-                <Slide key={`슬라이드_${v.id}`} swiperOption={v} />
-              </SwiperSlide>
+        <Swiper 
+          slidesPerView={3} 
+          spaceBetween={30} 
+          slidesPerGroup={3} 
+          loop={true} 
+          loopFillGroupWithBlank={true} 
+          pagination={{"clickable": true}} 
+          navigation={true} className="mySwiper"
+        >
+          {
+            swiperOption.map((v,i) => {
+              return (
+                  <SwiperSlide 
+                    data-key={`Slide_${v.id}`} 
+                    key={`${v.id}_SwiperSlide_${i}`}
+                  >
+                    <Slide 
+                      key={`slide_${v.id}_${i}`}
+                      swiperOption={v} 
+                    />
+                  </SwiperSlide>
+                )
+              }
             )
-          } )}
+          }
         </Swiper>
       </div>
     </section>
