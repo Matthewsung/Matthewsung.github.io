@@ -60,7 +60,7 @@ const DetailWebPage = ({options}) => {
     const itemNum = url.split('detail/')[1] - 1 ;
     
     return setDetailItem(options[itemNum])
-  }, [])
+  }, [options])
 
   const skillUrl = Object.values(detailItem.skill).map((val, i) => val ? skillImg[i].url : false)
   const usedSkill = skillUrl.map((val, i) => val ? <li className='deail_skill' style={{background: val}} key={options.git + "_li" + i}></li> : '')
@@ -87,7 +87,7 @@ const DetailWebPage = ({options}) => {
                   TYPE
                 </p> 
                 <p className="c_desc">
-                  반응형
+                {detailItem && detailItem.type}
                 </p>
               </div>
               <div className="c_content">

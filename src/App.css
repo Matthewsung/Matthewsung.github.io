@@ -105,7 +105,7 @@ section:nth-child(odd) {
 }
 
 .info_img {
-  width: 500px;
+  width: 320px;
   height: 500px;
   position: relative;
 }
@@ -189,7 +189,7 @@ section:nth-child(odd) {
 }
 
 .info_desc {
-  width: calc(100% - 500px);
+  width: calc(100% - 320px);
   padding: 25px 32px;
 }
 
@@ -197,17 +197,28 @@ section:nth-child(odd) {
   font-size: 18px;
 }
 
-
-.info_row p:first-child {
-  width: 150px;
+.info_title {
   font-size: 20px;
   font-weight: 600;
   padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.info_row p:last-child {
-  padding: 4px 16px;
+.more_box {
+  margin-left: 48px;
+  cursor: pointer;
 }
+.more_box:hover {
+  opacity: 0.6;
+}
+
+.info_detail_box {
+  height: 60px;
+  padding: 8px 16px;
+  overflow: hidden;
+}
+
 .info_row a:hover {
   opacity: 0.6;
 }
@@ -307,6 +318,7 @@ section:nth-child(odd) {
 .sec_box {
   width: 100%;
   height: 80%;
+  min-height: 750px;
   padding: 32px;
   background: #fff;
   border-radius: 16px;
