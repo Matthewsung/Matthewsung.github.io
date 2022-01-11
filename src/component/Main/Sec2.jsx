@@ -46,10 +46,6 @@ const Sec2 = ()=>{
                         <p>성주영</p>
                     </li>
                     <li className="info_row">
-                        <p>생년월일</p>
-                        <p>89.05.31</p>
-                    </li>
-                    <li className="info_row">
                         <p>이메일</p>
                         <p>jooyongs1@gmail.com</p>
                     </li>

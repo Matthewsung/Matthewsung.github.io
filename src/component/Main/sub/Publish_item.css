@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.publish_item:hover {
+  opacity: 0.7;
+}
+
 .publish_img_box {
   width: 100%;
   aspect-ratio: 1/1;

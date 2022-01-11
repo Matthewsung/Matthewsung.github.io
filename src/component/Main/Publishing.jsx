@@ -7,7 +7,7 @@ const options = [
   {
     id:1,
     sec:'sec_3',
-    desk:'url(img/baraboda_main.png) no-repeat left top / cover',
+    desk:'url(/img/baraboda_main.png) no-repeat left top / cover',
     tablet:'url(../img/baraboda_main_768.png) no-repeat center 23px / 92%',
     phone:'url(../img/baraboda_main_420.png) no-repeat center 5px / 92%',
     terms:'6일',
@@ -28,7 +28,7 @@ const options = [
   {
     id:2,
     sec:'sec_4',
-    desk:'url(img/drg_main.png) no-repeat left top / cover',
+    desk:'url(/img/drg_main.png) no-repeat left top / cover',
     tablet:'url(../img/drg_main_768.png) no-repeat center 23px / 92%',
     phone:'url(../img/drg_main_420.png) no-repeat center 5px / 92%',
     terms:'5일',
@@ -48,7 +48,7 @@ const options = [
   },
   {
     id:3,
-    desk:"url(img/covid.png) no-repeat left top / cover",
+    desk:"url(/img/covid.png) no-repeat left top / cover",
     detail:"API를 이용한 전세계의 코로나 확진자수를 파악하고 각 국가별 검색을 통해 자세한 확진자 추세를 확인하기 위해 제작",
     term:"5일",
     web:"https://matthewsung.github.io/covid/",
@@ -66,7 +66,7 @@ const options = [
   },
   {
     id:4,
-    desk:"url(img/webpage.png) no-repeat left top / cover",
+    desk:"url(/img/webpage.png) no-repeat left top / cover",
     detail:"경기생활 문화센터의 홈페이지 하드코딩",
     term:"5일",
     web:"https://matthewsung.github.io/randomapi/",
@@ -84,7 +84,7 @@ const options = [
   },
   {
     id:5,
-    desk:"url(img/api1.png) no-repeat left top / cover",
+    desk:"url(/img/api1.png) no-repeat left top / cover",
     detail:"새로고침시 랜덤으로 배우 변경 및 api를 이용한 랜덤한 배경을 local store를 이용하여 저장",
     term:"5일",
     web:"https://matthewsung.github.io/randomapi/",
@@ -102,7 +102,7 @@ const options = [
   },
   {
     id:6,
-    desk:"url(img/beerlist.png) no-repeat left top / cover",
+    desk:"url(/img/beerlist.png) no-repeat left top / cover",
     detail:"api를 이용한 beerlist를 redux, styled-component를 이용하여 화면에 표시하고 filter기능을 구현",
     term:"5일",
     web:"https://matthewsung.github.io/beerlist/",
@@ -120,7 +120,7 @@ const options = [
   },
   {
     id:7,
-    desk:"url(img/hollys.png) no-repeat left top / cover",
+    desk:"url(/img/hollys.png) no-repeat left top / cover",
     detail:"Vue와 SCSS를 이용한 홈페이지로 chart.js를 이용해 가독성을 높였으며 카카오 로그인을 통해 접근성을 향상시켰습니다.",
     term:"5일",
     web:"https://matthewsung.github.io/hollys/",
@@ -138,7 +138,7 @@ const options = [
   },
   {
     id:8,
-    desk:"url(img/quizrix.png) no-repeat left top / cover",
+    desk:"url(/img/quizrix.png) no-repeat left top / cover",
     detail:"Vue, Nuxt.js, node.js를 이용한 홈페이지로 메인페이지, 마이페이지, 어드민페이지 제작에 참여하였습니다.",
     term:"5일",
     web:"https://quizrix.com/",

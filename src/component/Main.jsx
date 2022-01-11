@@ -12,7 +12,7 @@ const Main = ()=>{
     const header = document.querySelector('.header')
     const header_ul = document.querySelector('.header .menu_ul')
     if(windowScreen >= sec1) {
-      header.style.background = "#fff"
+      header.style.background = "rgba(256, 256, 256, 0.6)"
       header_ul.style.color = "#042e54"
     }
     else if(windowScreen < sec1){

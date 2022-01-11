@@ -1,5 +1,39 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
+const skillImg = [
+  {
+    type: 'html',
+    url: 'url(/img/html.png) no-repeat center / 80%',
+  },
+  {
+    type: 'css',
+    url: 'url(/img/css.png) no-repeat center / 80%',
+  },
+  {
+    type: 'styledComponent',
+    url: 'url(/img/styled_css.png) no-repeat center / 80%',
+  },
+  {
+    type: 'sass',
+    url: 'url(/img/sass.png) no-repeat center / 80%',
+  },
+  {
+    type: 'jquery',
+    url: 'url(/img/jquery.png) no-repeat center / 80%',
+  }, 
+  {
+    type: 'js',
+    url: 'url(/img/js.png) no-repeat center / 80%',
+  }, 
+  {
+    type: 'react',
+    url: 'url(/img/react.png) no-repeat center / 80%',
+  },
+  {
+    type: 'vue',
+    url: 'url(/img/vue.png) no-repeat center / 80%',
+  },
+]
 
 const DetailWebPage = ({options}) => {
   const [detailItem, setDetailItem] = useState({
@@ -20,13 +54,17 @@ const DetailWebPage = ({options}) => {
       vue: false
     }
   })
+
   useEffect( () => {
     const url = window.location.href;
     const itemNum = url.split('detail/')[1] - 1 ;
+    
     return setDetailItem(options[itemNum])
   }, [])
-  
-  console.log(detailItem.desk)
+
+  const skillUrl = Object.values(detailItem.skill).map((val, i) => val ? skillImg[i].url : false)
+  const usedSkill = skillUrl.map((val, i) => val ? <li className='deail_skill' style={{background: val}} key={options.git + "_li" + i}></li> : '')
+
   return(
     <section className='sec_deatil_container'>
       <div className="w_1440">
@@ -39,6 +77,7 @@ const DetailWebPage = ({options}) => {
           <div className="container_L">
             <div 
               className="desk"
+              style={{background: detailItem.desk}}
             ></div>
           </div>
           <div className="container_R">
@@ -71,9 +110,11 @@ const DetailWebPage = ({options}) => {
                 <p className="c_title">
                     tool
                 </p>
-                <p className="c_desc">
-                  HTML / CSS / Javascript / Jquery
-                </p>
+                <ul className="c_desc c_skills">
+                  {
+                    usedSkill
+                  }
+                </ul>
               </div>
               <div className="c_content">
                 <p className="c_title">
