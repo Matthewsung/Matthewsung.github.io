@@ -22,9 +22,12 @@ const Sec2 = () => {
   const showMore = (index) => {
       const infoDetail = document.querySelectorAll('.info_detail_box')
       infoDetail.forEach(el => {
-          el.style.height = '60px'
+        el.style.height = '68px'
+          
+        el.style.display = '-webkit-box'
       });
       infoDetail[index].style.height = 'auto'
+      infoDetail[index].style.display = 'block'
   }
   return (
     <section className="sec_2">
@@ -94,7 +97,7 @@ const Sec2 = () => {
                 </div>
                 <div className="info_detail_box">
                   A. 까무잡잡한 피부. (선크림부터 바꿔야 할 것 같다...)
-                  <br /><br />
+                  <br />
                   사실 첫인상이 날카롭고 딱딱해 보인다는 소리를 가끔 듣는다. 흔히 사람이 나이가 들면 표정에서 살아온 삶이 나타난다고 하지 않는가? 그래서 거울을 보면서 자연스럽게 웃는 연습도 많이 하는데 생각보다 쉽지가 않은 것 같다다. (자연스러움을 연습한다는 것부터가 지극히 부자연스러움 ^^) 흔히 개발을 혼자서만 잘하면 되는 일로 생각하는 시선도 있지만 내가 그동안 프로젝트를 경험하고 포트폴리오를 쌓아오면서 느낀 것은 개발은 그 어떤 분야보다도 협업이 중요하다는 사실이다. 실제로 타인과의 소통을 통해 서로가 미처 발견하지 못했던 부분을 공유하게 되거나 명확한 아이데이션 과정을 거쳐 결과물의 퀄리티가 높아지는 사례들이 많다. 이러한 소통 과정을 보다 원활히 하기 위해서 주변 사람들에게 좀 더 친근한 모습으로 변화하고 싶다. 그러다 보면 노년에는 인심 좋은 할아버지 같은 서글서글한 인상을 갖게 될 수 있으리라 기대하고 있다.
 
                 </div>
