@@ -33,6 +33,10 @@ const skillImg = [
     type: 'vue',
     url: 'url(/img/vue.png) no-repeat center / 80%',
   },
+  {
+    type: 'typescript',
+    url: 'url(/img/typescriptLogo.svg) no-repeat center / 80%',
+  }
 ]
 
 const DetailWebPage = ({options}) => {
@@ -51,7 +55,8 @@ const DetailWebPage = ({options}) => {
       jquery: false, 
       js: false, 
       react: false,
-      vue: false
+      vue: false,
+      typescript: false,
     }
   })
 

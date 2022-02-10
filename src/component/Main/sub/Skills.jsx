@@ -39,6 +39,9 @@ const Skills = () => {
             <li>
               <img src="img/vue.png" alt="vue" />
             </li>
+            <li>
+              <img src="img/typescriptLogo.svg" alt="typescript" />
+            </li>
           </ul>
           <div className="common_skill communication_skill">
             <h3>COMMUNICATION</h3>

@@ -34,6 +34,10 @@ const skillImg = [
     type: 'vue',
     url: 'url(img/vue.png) no-repeat center / 80%',
   },
+  {
+    type: 'typescript',
+    url: 'url(img/typescriptLogo.svg) no-repeat center / 65%',
+  },
 ]
 
 const Publish_item = ({options})=>{

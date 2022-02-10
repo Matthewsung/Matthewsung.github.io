@@ -22,7 +22,8 @@ const options = [
       jquery: true, 
       js: true, 
       react: false,
-      vue: false
+      vue: false,
+      typescript: false,
     },
     detail: 'UI, UX를 고려하여 커피 관련 쇼핑몰을 하드코딩으로 구현'
   },
@@ -44,7 +45,8 @@ const options = [
       jquery: true, 
       js: true, 
       react: false,
-      vue: false
+      vue: false,
+      typescript: false,
     },
     detail: 'UI, UX를 고려하여 화장품 쇼핑몰을 하드코딩으로 구현'
   },
@@ -64,7 +66,8 @@ const options = [
       jquery: false, 
       js: true, 
       react: true,
-      vue: false
+      vue: false,
+      typescript: true,
     }
   },
   {
@@ -83,7 +86,8 @@ const options = [
       jquery: false, 
       js: true, 
       react: true,
-      vue: false
+      vue: false,
+      typescript: false,
     }
   },
   {
@@ -102,7 +106,8 @@ const options = [
       jquery: false, 
       js: true, 
       react: true,
-      vue: false
+      vue: false,
+      typescript: false,
     }
   },
   {
@@ -121,7 +126,8 @@ const options = [
       jquery: false, 
       js: true, 
       react: true,
-      vue: false
+      vue: false,
+      typescript: false,
     }
   },
   {
@@ -140,7 +146,8 @@ const options = [
       jquery: false, 
       js: true, 
       react: false,
-      vue: true
+      vue: true,
+      typescript: false,
     }
   },
   {
@@ -159,7 +166,8 @@ const options = [
       jquery: false, 
       js: true, 
       react: false,
-      vue: true
+      vue: true,
+      typescript: false,
     }
   },
 ]
