@@ -4,20 +4,28 @@ const Footer = ()=>{
     <div className="footer">
       <div className="w_1200">
         <header className="main_header">
-            <p>
-                CONTACT
-            </p>
+          <p>
+            CONTACT
+          </p>
         </header>
         <div className="contact">
-
-          <div className="f_item name"><h1>NAME</h1>성  주  영 </div>
+          <div className="f_item name">
+            <h1>NAME</h1>
+            <h3>
+              성  주  영
+            </h3>
+          </div>
           <div className="f_item phone_number">
             <h1>PHONE</h1>
-            010 - 9034 - 6170
+            <h3>
+              010 - 9034 - 6170
+            </h3>
           </div>
           <div className="f_item email">
             <h1>E-MAIL</h1>
-            jooyongs1@gmail.com
+            <h3>
+              jooyongs1@gmail.com
+            </h3>
           </div>
           <div className="f_item email">
             <a 
@@ -26,7 +34,9 @@ const Footer = ()=>{
               rel="noreferrer"
             >
               <h1>GITHUB</h1>
-              github.com/Matthewsung
+              <h3>
+                github.com/Matthewsung
+              </h3>
             </a>
           </div>
         </div>

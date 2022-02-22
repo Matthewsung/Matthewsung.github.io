@@ -51,6 +51,12 @@ const Skills = () => {
             <h3>VERSION_CONTROL</h3>
             <img src="img/version_skill.png" alt="version_skill" />
           </div>
+          <div className="common_skill certic_skill">
+            <h3>OTHER SKILLS</h3>
+            <p> 
+              #웹디자인 기능사 #컴퓨터 활용 능력 2급 #1종 보통 운전면허
+            </p>
+          </div>
         </main>
       </div>
     </section>

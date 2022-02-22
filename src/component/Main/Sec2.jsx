@@ -21,32 +21,22 @@ const Sec2 = () => {
   }, []);
   const showMore = (index) => {
       const infoDetail = document.querySelectorAll('.info_detail_box')
-
       const moreAll = ['+ 더보기','+ 더보기','+ 더보기','+ 더보기']
 
-      infoDetail.forEach(el => {
-        el.style.height = '58px'
-        el.style.display = '-webkit-box'
-      })
-      
       moreTxt.forEach((val,i) => {
+        infoDetail[i].style.height = '58px'
+        infoDetail[i].style.display = '-webkit-box'
+        
         if(index === i) {
-          moreAll[i] = '- 더보기'
+          if(val !== '- 접어두기') {
+            moreAll[i] = '- 접어두기'
+            infoDetail[i].style.height = 'auto'
+            infoDetail[i].style.display = 'block'
+          }
         }
       }) 
 
-      infoDetail[index].style.height = 'auto'
-      infoDetail[index].style.display = 'block'
-
       setMoreTxt(moreAll)
-
-
-      // infoDetail.forEach(el => {
-      //   el.style.height = '58px'
-      //   el.style.display = '-webkit-box'
-      // });
-      // infoDetail[index].style.height = 'auto'
-      // infoDetail[index].style.display = 'block'
   }
   return (
     <section className="sec_2">

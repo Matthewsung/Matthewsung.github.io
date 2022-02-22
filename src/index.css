@@ -5,13 +5,24 @@
   color: #042e54;
   font-size: 14px;
 }
+
 ul{
   list-style: none;
 }
+
 a{
   text-decoration: none;
   color: inherit;
 }
+
+h1 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
 .w_1200{
   max-width: 1248px;
   height: 100%;
@@ -23,11 +34,12 @@ a{
   justify-content: center;
   position: relative;
 }
+
 .w_1200 .main_header {
   width: 100%;
   margin-bottom: 32px;
-  
 }
+
 .w_1200 .main_header p {
   font-size: 62px;
   font-family: 'Nanum Pen Script', cursive;
