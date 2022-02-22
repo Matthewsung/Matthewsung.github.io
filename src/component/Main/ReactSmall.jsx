@@ -57,7 +57,7 @@ const ReactSmall = ()=>{
 
   return(
     <section className="sec_5">
-      <div className="w_1440">
+      <div className="w_1200">
         <header className="main_header">
           <p>REACT MINI PROJECT</p>
         </header>

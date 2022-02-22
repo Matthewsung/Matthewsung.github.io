@@ -175,7 +175,7 @@ const options = [
 const Publishing = ()=>{
   return(
     <section className="publish_wrap">
-      <div className="w_1440">
+      <div className="w_1200">
         <header className="main_header">
           <p>
             WORKS

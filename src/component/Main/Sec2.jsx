@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Sec2 = () => {
   const ScrollEvent = () => {
@@ -15,23 +15,42 @@ const Sec2 = () => {
       infoInnerImgr.style.animation = "img_up 0.3s 1s forwards";
     }
   };
-
+  const [moreTxt, setMoreTxt] = useState(['+ 더보기','+ 더보기','+ 더보기','+ 더보기'])
   useEffect(() => {
     window.addEventListener("scroll", ScrollEvent);
   }, []);
   const showMore = (index) => {
       const infoDetail = document.querySelectorAll('.info_detail_box')
+
+      const moreAll = ['+ 더보기','+ 더보기','+ 더보기','+ 더보기']
+
       infoDetail.forEach(el => {
-        el.style.height = '68px'
-          
+        el.style.height = '58px'
         el.style.display = '-webkit-box'
-      });
+      })
+      
+      moreTxt.forEach((val,i) => {
+        if(index === i) {
+          moreAll[i] = '- 더보기'
+        }
+      }) 
+
       infoDetail[index].style.height = 'auto'
       infoDetail[index].style.display = 'block'
+
+      setMoreTxt(moreAll)
+
+
+      // infoDetail.forEach(el => {
+      //   el.style.height = '58px'
+      //   el.style.display = '-webkit-box'
+      // });
+      // infoDetail[index].style.height = 'auto'
+      // infoDetail[index].style.display = 'block'
   }
   return (
     <section className="sec_2">
-      <div className="w_1440">
+      <div className="w_1200">
         <header className="main_header">
           <p>ABOUT ME</p>
         </header>
@@ -60,7 +79,7 @@ const Sec2 = () => {
                   className="more_box"
                   onClick={showMore.bind(this, 0)}
                 >
-                  + 더보기
+                  { moreTxt[0] }
                 </p>
               </div>
               <div className="info_detail_box">
@@ -76,7 +95,7 @@ const Sec2 = () => {
                     className="more_box"
                     onClick={showMore.bind(this, 1)}
                 >
-                    + 더보기
+                  { moreTxt[1] }
                 </p>
                 </div>
                 <div className="info_detail_box">
@@ -92,7 +111,7 @@ const Sec2 = () => {
                         className="more_box"
                         onClick={showMore.bind(this, 2)}
                     >
-                        + 더보기
+                      { moreTxt[2] }
                     </p>
                 </div>
                 <div className="info_detail_box">
@@ -111,7 +130,7 @@ const Sec2 = () => {
                         className="more_box"
                         onClick={showMore.bind(this, 3)}
                     >
-                        + 더보기
+                      { moreTxt[3] }
                     </p>
                 </div>
                 <div className="info_detail_box">
@@ -127,7 +146,7 @@ const Sec2 = () => {
                         className="more_box"
                         onClick={showMore.bind(this, 4)}
                     >
-                        + 더보기
+                      { moreTxt[0] }
                     </p>
                 </div>
                 <div className="info_detail_box">

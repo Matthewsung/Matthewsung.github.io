@@ -47,7 +47,6 @@ const Publish_item = ({options})=>{
   return(
     <div 
       className="publish_item"
-      
     >
       <Link to={{pathname: `/detail/${options.id}`}}>
         <div 

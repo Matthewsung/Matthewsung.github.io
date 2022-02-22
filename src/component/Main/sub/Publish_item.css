@@ -1,5 +1,5 @@
 .publish_item {
-  width: calc((100% - (32px * 2)) / 3);
+  width: calc((100% - (48px * 2)) / 3);
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
   background: #fff;
   padding: 32px;

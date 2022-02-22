@@ -5,12 +5,11 @@ const Sec1 = ()=>{
   const [secTxt, setSecTxt]= useState(null)
   let index = 0;
   useEffect(() => {
-    const secP = document.querySelector('.sec_1_txt p')
-    // secP.style.opacity = 1
+    const secP = document.querySelector('.sec_1_sub_txt')
     setTimeout(() => {
       secP.style.opacity = 0
     },2000);
-
+    
     setInterval(() => {
       secP.style.opacity = 1
       setSecTxt(SecTxtOption[index % SecTxtOption.length])
@@ -25,9 +24,12 @@ const Sec1 = ()=>{
     <section className="sec_1">
       <div className="sec_1_txt">
         나는 
-        <p>
-          { secTxt }
-        </p>
+        <div className="sec_1_txt_wrap">
+          <p className='sec_1_sub_txt'>
+            { secTxt }
+          </p>
+          <p className="sec_1_line"></p>
+        </div>
          개발자다
       </div>
     </section>

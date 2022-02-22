@@ -72,7 +72,7 @@ const DetailWebPage = ({options}) => {
 
   return(
     <section className='sec_deatil_container'>
-      <div className="w_1440">
+      <div className="w_1200">
         <div className="closed_box">
           <Link to={'/'}>
             X
