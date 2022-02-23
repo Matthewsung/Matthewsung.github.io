@@ -305,7 +305,8 @@ section:nth-child(odd) {
 .works_container {
   width: 100%;
   display: flex;
-  gap: 48px;
+  flex-wrap: wrap;
+  gap: 24px;
   overflow: hidden;
 }
 
@@ -326,33 +327,34 @@ section:nth-child(odd) {
 }
 
 .closed_box {
-  /* width: 32px;
-  height: 32px; */
-  font-size: 24px;
-  padding: 8px 24px;
   position: absolute;
-  right: 0;
-  top: 10%;
+  right: 3%;
+  top: 11%;
 }
 
 .closed_box:hover {
   opacity: 0.6;
 }
 
+.closed_box a {
+  font-size: 20px;
+  padding: 0 8px;
+}
+
 .sec_box {
   width: 100%;
   height: 80%;
   min-height: 750px;
-  padding: 32px;
+  padding: 24px;
   background: #fff;
   border-radius: 16px;
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
 }
 
 .container_L {
-  width: 40%;
+  width: 50%;
   height: 100%;
   overflow: hidden;
 }
@@ -363,12 +365,12 @@ section:nth-child(odd) {
   
   overflow: hidden; 
   border: 1px solid rgba(0,0,0,0.1);
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .container_R {
-  width: 60%;
-  padding: 32px 0;
+  width: 50%;
+  padding: 16px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -383,22 +385,21 @@ section:nth-child(odd) {
 .c_content {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 16px;
 }
 
 .c_top .c_content:last-child .c_desc{
   width: 100%;
-  margin-top: -16px;
   line-height: 1.5;
 }
 
 .c_title {
-  width: 150px;
-  font-size: 24px;
+  width: 70px;
+  font-size: 18px;
   text-align: center;
   padding: 8px 0;
   background: #e2e7eb;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .c_desc {
@@ -406,28 +407,28 @@ section:nth-child(odd) {
   font-size: 18px;
   padding: 8px 16px;
 }
+
 .c_skills {
   width: 100%;
-  margin-top: -16px;
   display: flex;
   gap: 16px;
 }
+
 .c_skills .deail_skill { 
   width: 48px;
   height: 48px;
   border-radius: 50%;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
-
 }
 
 .c_goToWeb {
-  width: 45%;
+  width: 100%;
   line-height: 1.5;
   text-align: center;
   font-size: 24px;
   font-weight: 600;
   border-radius: 16px;
-  box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
 }
 
 .c_goToWeb:hover {

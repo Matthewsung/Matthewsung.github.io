@@ -35,7 +35,7 @@ const skillImg = [
   },
   {
     type: 'typescript',
-    url: 'url(/img/typescriptLogo.svg) no-repeat center / 80%',
+    url: 'url(/img/typescriptLogo.svg) no-repeat center / 65%',
   }
 ]
 
@@ -97,14 +97,6 @@ const DetailWebPage = ({options}) => {
               </div>
               <div className="c_content">
                 <p className="c_title">
-                    참여도
-                </p> 
-                <p className="c_desc">
-                  100%
-                </p>
-              </div>
-              <div className="c_content">
-                <p className="c_title">
                     기간
                 </p> 
                 <p className="c_desc">
@@ -113,7 +105,7 @@ const DetailWebPage = ({options}) => {
               </div>
               <div className="c_content">
                 <p className="c_title">
-                    tool
+                  SKILLS
                 </p>
                 <ul className="c_desc c_skills">
                   {

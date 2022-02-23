@@ -1,8 +1,8 @@
 .publish_item {
-  width: calc((100% - (48px * 2)) / 3);
+  width: calc((100% - (24px * 3)) / 4);
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
   background: #fff;
-  padding: 32px;
+  padding: 16px;
   border-radius: 16px;
   cursor: pointer;
 }
@@ -17,7 +17,7 @@
   overflow: hidden;
   
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .publish_img_box img {
@@ -29,17 +29,17 @@
 }
 
 .skill_box h3 {
-  margin: 16px 0;
+  margin: 10px 0;
 }
 
 .used_skill {
   display: flex;
-  gap: 16px;
+  gap: 12px;
 }
 
 .used_skill li{
-  width: 64px;
-  height: 64px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
 }

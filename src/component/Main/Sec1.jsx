@@ -18,6 +18,9 @@ const Sec1 = ()=>{
         secP.style.opacity = 0
       }, 2000)
     }, 3000, 800 )
+
+    
+    
   }, [index])
   
   return(

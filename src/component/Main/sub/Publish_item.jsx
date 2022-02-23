@@ -45,27 +45,19 @@ const Publish_item = ({options})=>{
   const usedSkill = skillUrl.map((val, i) => val ? <li style={{background: val}} key={options.git + "_li" + i}></li> : '')
   
   return(
-    <div 
-      className="publish_item"
-    >
+    <div className="publish_item">
       <Link to={{pathname: `/detail/${options.id}`}}>
         <div 
           className="publish_img_box"
           style={{ background: options.desk }}
         ></div>
-        <div 
-          className="skill_box"
-        >
-          <h3
-          >사용 스킬</h3>
-          <ul 
-            className="used_skill"
-          >
+        <div className="skill_box">
+          <h3>SKILLS</h3>
+          <ul className="used_skill">
             { usedSkill }
           </ul>
         </div>
       </Link>
-      
     </div>
   )
 }
